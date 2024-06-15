@@ -10,7 +10,7 @@ export const isValidPassword = (password) => {
   let isValid;
 
   const hasDigitInPassword = password.match(/\d/) !== null;
-  const hasCapitalLetterInPassword = password.match(/[A-ZÁÉÍÓÚÜÑ]/) !== null;
+  const hasCapitalLetterInPassword = password.match(/[A-ZÁÉÍÓÚÀÈÌÒÙ]/) !== null;
   isValid =
     password.length >= 8 && hasDigitInPassword && hasCapitalLetterInPassword;
 
